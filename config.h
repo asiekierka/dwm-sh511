@@ -8,7 +8,7 @@ static const char normfgcolor[]     = "#5e4fa2"; //rarity hair fill colour
 static const char selbordercolor[]  = "#49176d"; //rarity hair stroke colour
 static const char selbgcolor[]      = "#ebeff1"; //rarity body fill colour
 static const char selfgcolor[]      = "#1e98d3"; //Rarity CM colour 2
-static const unsigned int borderpx  = 0;        /* border pixel of windows */
+static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 16;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = True;     /* False means bottom bar */
@@ -69,7 +69,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY|ShiftMask,             XK_c,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,			XK_s,	   setlayout	   {.v = &layouts[1]} },
+//	{ MODKEY,			XK_s,	   setlayout	   {.v = &layouts[1]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[3]} },
 	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,			XK_m,      setlayout,	   {.v = &layouts[5]} },
