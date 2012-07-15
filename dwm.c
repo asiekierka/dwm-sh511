@@ -1740,13 +1740,13 @@ squaretile(Monitor *m) {
 	if(n == 0)
 		return;
 
-	if(n > m->nmaster)
-		mw = m->nmaster ? m->ww * m->mfact : 0;
+	if(n > nmaster_sq)
+		mw = nmaster_sq ? m->ww * m->mfact : 0;
 	else
 		mw = m->ww;
 	for(i = my = ty = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++)
-		if(i < m->nmaster_sq) {
-			h = (m->wh - my) / (MIN(n, m->nmaster_sq) - i);
+		if(i < nmaster_sq) {
+			h = (m->wh - my) / (MIN(n, nmaster_sq) - i);
 			resize(c, m->wx, m->wy + my, mw - (2*c->bw), h - (2*c->bw), False);
 			my += HEIGHT(c);
 		}
