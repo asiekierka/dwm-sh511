@@ -32,6 +32,7 @@ static const Layout layouts[] = {
 	{ "[]=",      tile },    /* first entry is default */
 	{ "><>",      NULL },    /* no layout function means floating behavior */
 	{ "(@)",      spiral },
+	{ "[+]",      squaretile },
 	{ "[M]",      monocle },
 };
 
@@ -50,7 +51,7 @@ static const Layout layouts[] = {
 static const char *dmenucmd[] = { "dmenu_run", "-fn", font, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbgcolor, "-sf", selfgcolor, NULL };
 static const char *termcmd[]  = { "uxterm", NULL };
 static const char *snapcmd[]  = { "ksnapshot", NULL};
-static const char *konsolecmd[] = { "urxvt", NULL};
+static const char *konsolecmd[] = { "konsole", NULL};
 
 
 static Key keys[] = {
