@@ -14,7 +14,7 @@ static const Bool showbar           = True;     /* False means no bar */
 static const Bool topbar            = False;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "R", "a", "r", "i", "t", "y" };
+static const char *tags[] = { "R", "a", "r", "i", "t", "y", "^", "<", ">" };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
@@ -33,6 +33,7 @@ static const Layout layouts[] = {
 	{ "[+]",      squaretile },
 	{ "(@)",      spiral },
 	{ "><>",      NULL },
+	{ "[G]",      gaplessgrid },
 	{ "[M]",      monocle },
 };
 
@@ -73,6 +74,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[3]} },
 	{ MODKEY,                       XK_g,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,			XK_m,      setlayout,	   {.v = &layouts[5]} },
+	{ MODKEY|ShiftMask,		XK_g,      setlayout,	   {.v = &layouts[4]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
@@ -89,9 +91,9 @@ static Key keys[] = {
 	TAGKEYS(                        XK_4,                      3)
 	TAGKEYS(                        XK_5,                      4)
 	TAGKEYS(                        XK_6,                      5)
-//	TAGKEYS(                        XK_7,                      6)
-//	TAGKEYS(                        XK_8,                      7)
-//	TAGKEYS(                        XK_9,                      8)
+	TAGKEYS(                        XK_7,                      6)
+	TAGKEYS(                        XK_8,                      7)
+	TAGKEYS(                        XK_9,                      8)
 	{ MODKEY|ShiftMask,             XK_q,      quit,           {0} },
 };
 
