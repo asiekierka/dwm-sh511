@@ -2,19 +2,19 @@
 
 /* appearance */
 static const char font[]            = "-*-terminus-medium-r-*-*-12-*-*-*-*-*-*-*";
-static const char normbordercolor[] = "#49176D"; //rarity hair stroke colour
-static const char normbgcolor[]     = "#eceffe"; //some colour
-static const char normfgcolor[]     = "#5e4fa2"; //rarity hair fill colour
-static const char selbordercolor[]  = "#49176d"; //rarity hair stroke colour
-static const char selbgcolor[]      = "#ebeff1"; //rarity body fill colour
-static const char selfgcolor[]      = "#1e98d3"; //Rarity CM colour 2
+static const char normbordercolor[] = "#944D84"; //rarity hair stroke colour
+static const char normbgcolor[]     = "#BF49A4"; //some colour
+static const char normfgcolor[]     = "#EBE7D1"; //rarity hair fill colour
+static const char selbordercolor[]  = "#944D84"; //rarity hair stroke colour
+static const char selbgcolor[]      = "#C070B0"; //rarity body fill colour
+static const char selfgcolor[]      = "#EDE9D5"; //Rarity CM colour 2
 static const unsigned int borderpx  = 1;        /* border pixel of windows */
 static const unsigned int snap      = 16;       /* snap pixel */
 static const Bool showbar           = True;     /* False means no bar */
-static const Bool topbar            = False;     /* False means bottom bar */
+static const Bool topbar            = True;     /* False means bottom bar */
 
 /* tagging */
-static const char *tags[] = { "R", "a", "r", "i", "t", "y", "^", "<", ">" };
+static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
 
 static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
